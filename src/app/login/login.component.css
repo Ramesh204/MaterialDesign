@@ -1,0 +1,68 @@
+.mat-card{
+    width: 340px;
+    margin: auto;
+}
+
+.mat-card .full-width {
+    width: 100%;
+}
+
+.mat-card-title {
+    text-align:center;
+    font-size:18px;
+    color:rgba(0, 0, 0, 0.87)
+}
+
+.mat-raised-button {
+    width:100%;
+   background-color: #1e88e5;
+   color:white;
+}
+.mat-card  {
+    padding:24px;
+}
+
+a#A1 {
+    text-decoration: none;
+    float: right;
+    font-family: sans-serif;
+    color:rgba(0, 0, 0, 0.87);
+}
+a#A1:hover {
+    color:rgb(30, 136, 229);
+}
+
+a#A2 {
+    text-decoration: none;
+}
+.mat-divider {
+    text-decoration: none;
+}
+
+.S1 {
+    text-align: center;
+}
+
+.example-header-image {
+    background-image: url('/assets/CenturyLink-Symbol-Logo.png');
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+
+  .mat-card-avatar {
+    height: 68px;
+    width: 74px;
+    margin-top:-20px;
+
+  }
+
+
+  .mat-input-element {
+      font-size:16px;
+      font-weight: 400;
+      
+  }
+
+ 
