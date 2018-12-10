@@ -2,12 +2,13 @@
         <mat-card-title>
           <div mat-card-avatar class="example-header-image">
           </div>
-       Login to CenturyLink 
+          Login to Century<b>Link</b> 
         
         </mat-card-title>
-      
+
+        <form [formGroup]="loginFormGroup" #loginForm="ngForm">
         <mat-card-content>
-          <form [formGroup]="loginFormGroup" name="myForm">
+          
             <mat-form-field class="full-width">
               <input matInput placeholder="Username"  formControlName="usernameCntrl" [errorStateMatcher]="matcher">
               <mat-error >
@@ -25,21 +26,14 @@
 
             <section class="example-section">
                 <mat-checkbox class="example-margin">Remember me</mat-checkbox>
-                <a id="A1" routerLink=" ">Forgot pwd?</a>
               </section>
-
-
-          </form>
+            
         </mat-card-content>
 
 
         <mat-card-actions>
-          <button mat-raised-button  >Login</button> 
+          <button mat-raised-button color="accent" [disabled]="loginForm.form.invalid">Login</button> 
         </mat-card-actions>
-
-        <mat-card-footer>
-          <div class="S1">
-            Don't have account <a id="A2" routerLink="">Register</a>
-          </div>
-        </mat-card-footer>
+        
+      </form>
       </mat-card>
